@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Lab exercise CSS</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="your-name" />
+    <meta name="description" content="CSS lab exercises" />
+    <link href="style-page-grid.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <p>Joe Blogs</p>
+        <img id="logo" src="images/star.svg" alt="logo" />
+    </header>
+    <nav id="nav-labs">
+        <ul>
+            <li><a href="html5-structural-elements.html">HTML5 structural elements</a></li>
+            <li><a href="html5-validation.html">HTML5 validation</a></li>
+            <li><a href="html5-common-elements.html">HTML5 vommon elements</a></li>
+            <li><a href="style-page.html">Style page</a></li>
+        </ul>
+    </nav>
+    <section id="section-mark-calculator">
+        <h1>Mark calculator</h1>
+        <form class="panel">
+            <div id="div-labs">
+                <p>Select completed exercises</p>
+                <div>
+                    <input type="checkbox" id="lab-structural-elements" name="lab-structural-elements" />
+                    <label for="lab-structural-elements">Structural Elements</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="lab-validation" name="lab-validation" />
+                    <label for="lab-validation">Validation</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="lab-common-elements" name="lab-common-elements" />
+                    <label for="lab-common-elements">Common elements</label>
+                </div>
+            </div>
+            <div>
+                <p>Checked for XML well-formdness in Firefox?</p>
+                <label for="radio-xml-valid-yes">Yes</label>
+                <input type="radio" id="radio-xml-valid-yes" name="xml-valid" value="Yes" />
+                <label for="radio-xml-valid-no">No</label>
+                <input type="radio" id="radio-xml-valid-no" name="xml-valid" value="No" />
+                <p>Any errors from W3C validator?</p>
+                <label for="radio-w3c-valid-yes">Yes</label>
+                <input type="radio" id="radio-w3c-valid-yes" name="w3c-valid" value="Yes" />
+                <label for="radio-w3c-valid-no">No</label>
+                <input type="radio" id="radio-w3c-valid-no" name="w3c-valid" value="No" />
+            </div><br>
+            <div class="panel">
+                <button id="button-calculate">Calculate</button>
+                <label for="calculated-mark">mark: </label>
+                <input type="text" id="calculated-mark" name="calculated-mark" disabled="disabled" />
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p>Joe Bloggs — j.blogs@example.com</p>
+    </footer>
+</body></html>
