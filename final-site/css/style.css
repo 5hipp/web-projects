@@ -97,6 +97,7 @@ section {
 footer {
     text-align: center;
     border-top: 0.2vw solid #f7b7b7;
+    margin-top: 15px; 
 }
 
 @media (max-width: 900px) {
