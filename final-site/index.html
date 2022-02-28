@@ -7,6 +7,8 @@
     <meta name="author" content="Joseph Shipp" />
     <meta name="description" content="Joe Shipp Exemplar Website" />
     <link href="css/style.css" rel="stylesheet" />
+    <link hred="css/navbar.css" rel="stylesheet" />
+    <script src="js/scripts.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
@@ -16,44 +18,58 @@
 
 <body>
     <header>
-        
         <p>Beyond the Melodies</p>
         <img id="logo" src="img/logo.webp" alt="header image">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <span id="navbutton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
     </header>
 
- 
 
-    <div id="navbar">
-        <a href="#header">Home</a>
-        <a href="#about">About</a>
-        <a href="#ig-feed">News</a>
-        <a href="#contact" style="align-self: right;">Contact<a>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
     </div>
-
 
     <div class="container">
-    
+
         <img id="image" src="img/founder.png" alt="body image">
         <p class="center">Founder and creator Jemma Crane presents to musicians a space to promote interview and review their music and talent. Jemma has worked with many artists, bands, DJs from around the world.</p>
-        
+
     </div>
+
+
 
     <section>
 
-        
         <h1 id="about">About</h1>
-        
-        <p>Are you releasing new music soon? Do you want to be featured on student-led music blog? Fancy an interview or a review of your music? <br> Music Business student Jemma Crane created Instagram blog Beyond the Melodies in 2020 and has worked with many bands, artists and musicians since. Jemma Crane has now created a brand new website for the page 'beyondthemelodies.com' a space which shares previous posts and brand new articles!</p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Are you releasing new music soon? Do you want to be featured on student-led music blog? Fancy an interview or a review of your music? <br> Music Business student Jemma Crane created Instagram blog Beyond the Melodies in 2020 and has worked with
+            many bands, artists and musicians since. Jemma Crane has now created a brand new website for the page 'beyondthemelodies.com' a space which shares previous posts and brand new articles!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
         <h2 id="ig-feed">Instagram Feed</h2>
 
-        <div class="embedsocial-hashtag" data-ref="885504596e55e2b535518e00db30df97522ac313"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialHashtagScript"));</script>
+        <div class="embedsocial-hashtag" data-ref="885504596e55e2b535518e00db30df97522ac313"></div>
+        <script>
+            (function(d, s, id) {
+                var js;
+                if (d.getElementById(id)) {
+                    return;
+                }
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://embedsocial.com/cdn/ht.js";
+                d.getElementsByTagName("head")[0].appendChild(js);
+            }(document, "script", "EmbedSocialHashtagScript"));
+        </script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 

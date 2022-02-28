@@ -9,10 +9,10 @@
 body {
     display: grid;
     grid-template-areas:
-        "header"
-        "sidebar"
-        "content"
-        "footer";
+     "a a a a a a a a" 
+     "c c b b b b b b" 
+     "c c b b b b b b" 
+     "c c c c c c c c";
     grid-gap: 0.5em;
     font-size: 1em;
 }
@@ -21,15 +21,13 @@ section {
     grid-area: content;
 }
 
-
-
 #image {
-width: 90%;
-  height: auto;
-  border: 0.1vw solid #e8e6e6;
-  border-radius: 0.5vw;
-  padding: 1vw;
-  margin: 1vh 0;
+    width: 90%;
+    height: auto;
+    border: 0.1vw solid #e8e6e6;
+    border-radius: 0.5vw;
+    padding: 1vw;
+    margin: 1vh 0;
 }
 
 .container {
@@ -46,40 +44,23 @@ width: 90%;
     font-weight: bold;
     text-shadow: black;
     font-size: 1.5vw;
-  }
+}
 
 footer {
     grid-area: footer;
 }
 
-#navbar {
-    border: 0.1vw solid #e8e6e6;
-    border-radius: 0.5vw;
-    padding: 1vw;
-    margin: 1vh;
-    color: black;
-    font-size: 1.4vw;
-    background-color: #f0f0f5;
-}
-
-#navbar a:hover {
-    background-color: #ddd;
-    color: black;
+.logo { 
+    grid-area: a;
 }
 
 header {
-    display: flex;
-    grid-area: header;
+    grid-area: a;
     align-items: center;
     justify-content: space-between;
     border-bottom: 0.2vw solid #f7b7b7;
     font-size: 1.775em;
     padding-left: 1vw;
-}
-
-#logo {
-    padding-right: 10px;
-    width: 100px;
 }
 
 section {
@@ -88,8 +69,8 @@ section {
     padding: 1vw;
     margin: 1vh 0;
     color: black;
-    width: 90%; 
-    height:auto;
+    width: 90%;
+    height: auto;
     margin-left: auto;
     margin-right: auto
 }
@@ -97,7 +78,7 @@ section {
 footer {
     text-align: center;
     border-top: 0.2vw solid #f7b7b7;
-    margin-top: 15px; 
+    margin-top: 15px;
 }
 
 @media (max-width: 900px) {
