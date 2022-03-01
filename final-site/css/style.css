@@ -15,22 +15,6 @@
   margin: 1vh 0;
 }
 
-.container {
-    position: relative;
-    text-align: center;
-}
-
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-weight: bold;
-    text-shadow: black;
-    font-size: 1.5vw;
-  }
-
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
@@ -64,7 +48,36 @@
     float: right;
 }
 
-.wrapper1 {
+
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-shadow: black;
+    font-size: 1.5vw;
+  }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.wrapper {
     border: 0.1vw solid #e8e6e6;
     border-radius: 0.5vw;
     padding: 1vw;
@@ -73,7 +86,8 @@
     width: 90%;
     height:auto;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    margin-bottom: 3vh;
 }
 
 footer {
