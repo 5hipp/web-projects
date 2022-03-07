@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>[Joe]</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Profile Page of Joe">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+    <script src="js/joe.js"></script>
+    <script src="js/title.js"></script>
+
+    <link rel="shortcut icon" type="image/png" href="css/favicon.png">
+    <meta name="image" content="favicon1.png" />
+    <meta property="og:image" content="favicon1.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<div id="box">
+    <div id="title" class="animated fadeInUpBig">
+        <a id="tit" href="" target="_self">見崎</a>
+        <p id="sub">joe</p>
+    </div>
+
+    <div id="links" class="animated fadeInUpBig">
+        <a id="steam" href="https://steamcommunity.com/profiles/76561197961314105" target="_blank">steam</a><br>
+        <a id="group" href="https://steamcommunity.com/groups/british" target="_blank">group</a><br>
+        <a id="instagram" href="https://instagram.com/j.o" target="_blank">instagram</a><br>
+        <a id="twitter" href="https://twitter.com/lxr" target="_blank">twitter</a><br>
+        <a id="discord" href="https://discord.gg/CNAWKwe" target="_blank">discord</a>
+    </div>
+
+    <script type="text/javascript">
+        var numberOfSongs = 8
+        var sound = new Array(numberOfSongs + 1)
+        sound[0] = "music/a.mp3"
+        sound[1] = "music/b.mp3"
+        sound[2] = "music/c.mp3"
+        sound[3] = "music/d.mp3"
+        sound[4] = "music/e.mp3"
+        sound[5] = "music/f.mp3"
+        sound[6] = "music/g.mp3"
+        sound[7] = "music/h.mp3"
+
+        function randomNumber() {
+            var randomLooper = -1
+            while (randomLooper < 0 || randomLooper > numberOfSongs || isNaN(randomLooper)) {
+                randomLooper = parseInt(Math.random() * (numberOfSongs + 1))
+            }
+            return randomLooper
+        }
+        var randomsub = randomNumber()
+        var soundFile = sound[randomsub]
+        document.write('<EMBED src= "' + soundFile + '" hidden=true autostart=true loop=true>')
+
+    </script>
+
+    <script>
+        var audio = document.getElementById("myaudio");
+        audio.volume = 0.15;
+
+    </script>
+</div>
+
