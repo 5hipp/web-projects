@@ -90,6 +90,14 @@ body {
     top: -2px;
     left: -2px;
 }
+
+#github:hover {
+    text-shadow: 3px 3px 3px #ff66ff;
+    position: relative;
+    top: -2px;
+    left: -2px;
+}
+
 #box {
     padding: 20px;
     background-color: #995353;
