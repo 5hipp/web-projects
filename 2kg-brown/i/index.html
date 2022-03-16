@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> no peepin </title>
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+</head>
+<style>
+.container {
+  height: 200px;
+  position: relative;
+}
+
+.center {
+  padding: 250px 0;
+}
+body {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color:#f6f6f6;
+  color:#000;
+}
+
+.typewrite > .wrap {
+  color: #000;
+  font-family: 'Swanky and Moo Moo', cursive;
+}
+
+* {
+  color:#000; text-decoration: none;
+}
+
+</style>
+<script>
+	var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 250;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        document.body.appendChild(css);
+    };
+</script>
+<body>
+
+<h1>
+  <a class="typewrite"
+     data-type='[
+                "can you not",
+                "look for my screenshots",
+                "thx",
+                "-joe"
+                ]'>
+  </a>
+</h1>
+
+<script type="text/javascript">
+    var numberOfSongs = 0
+    var sound = new Array(numberOfSongs+1)
+    sound[0]= "bruh.mp3"
+    function randomNumber(){
+    var randomLooper = -1
+    while (randomLooper < 0 || randomLooper > numberOfSongs || isNaN(randomLooper)){ randomLooper = parseInt(Math.random()*(numberOfSongs+1))
+    }
+    return randomLooper
+    }
+    var randomsub = randomNumber()
+    var soundFile = sound[randomsub]
+    document.write ('<EMBED src= "' + soundFile + '" hidden=true autostart=true loop=true>')
+</script>
+
+</body>
+
+</html>
