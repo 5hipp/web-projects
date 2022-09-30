@@ -14,7 +14,7 @@ function loaded() {
     setInterval(loop, 700)
 }
 var x = 0;
-var titleText = ['[Joe]', '[George]', '[Brandon]', '[Thomas]', '[Sam]', '[Jack]'];
+var titleText = ['[Joe]'];
 
 function loop() {
     document['getElementsByTagName']('title')[0]['innerHTML'] = titleText[x++ % titleText['length']]
