@@ -1,7 +1,8 @@
 <?php
-
     require "../private/autoload.php";
     $Error = "";
+    $email = "";
+    $username = "";
 
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
@@ -19,16 +20,55 @@
         {
             $Error = "Please enter a valid username.";
         }
+
         $username = esc($username);
-
         $password = esc($_POST['password']);
-        
-        if ($Erorr == "")
-        {
-            //$query = "insert into users (url_address,username,email,password,date) values ('$url_address','$username','$email','$password','$date')";
-            $query = "insert into users (url_address,username,email,password,date) values (:url_address,:username,:email,:password,:date)";
 
-            mysqli_query($connection, $query);
+        //check if email exists
+        $arr = false;
+        $arr['email'] = $email;
+
+        $query = "select * from users where email = :email limit 1;";
+        $stm = $connection->prepare($query);
+        $check = $stm->execute($arr);
+
+        if ($check)
+        {
+            $data = $stm->fetchAll(PDO::FETCH_OBJ);
+            if(is_array($data) && count($data) > 0)
+            {
+                $Error = "Email already in use.";
+            }
+        }
+
+        //check if username exists
+        $arr = false;
+        $arr['username'] = $username;
+
+        $query = "select * from users where username = :username limit 1;";
+        $stm = $connection->prepare($query);
+        $check = $stm->execute($arr);
+
+        if ($check)
+        {
+            $data = $stm->fetchAll(PDO::FETCH_OBJ);
+            if(is_array($data) && count($data) > 0)
+            {
+                $Error = "Username already in use.";
+            }
+        }
+        
+        if ($Error == "")
+        {
+            $arr['url_address'] = $url_address;
+            $arr['username'] = $username;
+            $arr['email'] = $email;
+            $arr['password'] = $password;
+            $arr['date'] = $date;
+
+            $query = "insert into users (url_address,username,email,password,date) values (:url_address,:username,:email,:password,:date)";
+            $stm = $connection->prepare($query);
+            $stm->execute($arr);
 
             header("Location: login.php");
             die;
@@ -70,8 +110,8 @@
                 }
             ?></div>
             <div id="title">Signup</div>
-            <input id="textbox" type="text" name="username" required><br>
-            <input id="textbox" type="email" name="email" required><br>
+            <input id="textbox" type="text" name="username" value="<?=$username?>" required><br>
+            <input id="textbox" type="email" name="email" value="<?=$email?>" required><br>
             <input id="textbox" type="password" name="password" required><br><br>
             <input type="submit" value="Signup">
         </form>
