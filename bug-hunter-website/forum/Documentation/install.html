@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>MyBB Documentation - Installation instructions</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	<style type="text/css">ol li { padding-bottom: 10px; }</style>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+		<h1>MyBB</h1>
+
+		<div id="utilities">
+			<div id="syndication">
+				<h3>MyBB Links</h3>
+				<p>
+					<a href="http://mybb.com">MyBB Website</a><br />
+					<a href="http://community.mybb.com">MyBB Community Forums</a><br />
+					<a href="http://docs.mybb.com">MyBB Docs</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="primary-navigation">
+		<ul>
+			<li><a href="index.html">Welcome</a></li>
+			<li><a href="license.html">License Agreement</a></li>
+			<li class="active"><a href="install.html">Installation Instructions</a></li>
+			<li><a href="upgrade.html">Upgrade Instructions</a></li>
+			<li><a href="credits.html">Credits</a></li>
+		</ul>
+	</div>
+	<div id="page-content">
+		<div class="item">
+			<h3>Installation Instructions</h3>
+			<h4>Quick and easy steps to get you up and running</h4>
+			<p>These steps are by no means exhaustive or as detailed as possible. If you require more detailed installation instructions, please see <a href="http://docs.mybb.com/Installing.html">MyBB Docs - Installing</a>.</p>
+			<ol>
+				<li>Unzip the release archive to your computer using an archive utility capable of decompressing the download format you chose (<a href="http://www.winzip.com">WinZip</a>, <a href="http://www.rarsoft.com/">WinRAR</a>)</li>
+				<li>Using an FTP client (<a href="http://www.flashfxp.com">FlashFXP</a>, <a href="http://filezilla-project.org/">FileZilla</a>, <a href="http://www.smartftp.com/">SmartFTP</a>), or a file manager provided with your hosting package, upload the entire contents of the 'Upload' directory to a visible directory on your web server (for example, forum or forums).</li>
+				<li>CHMOD the following files to 666 (ie, make sure that PHP can write to them).<br />./inc/settings.php<br />./inc/config.php (you must rename <strong>config.default.php</strong> to <strong>config.php</strong> first)<br />./inc/languages/*your_language*/*all files* (optional)<br />./inc/languages/*your_language*/admin/*all files* (optional)<br /><br />CHMOD the following folders to 777 (ie, make sure that PHP can write to and execute from them).<br />./cache/<br />./cache/themes/<br />./uploads/<br />./uploads/avatars/<br />./admin/backups/ (optional)</li>
+				<li>In your browser, visit the URL where you installed your forums, appending /install/ on to the end of it.<br /><br />If you installed your forums to http://www.yoursite.com/forums/ then you would visit http://www.yoursite.com/forums/install/.</li>
+				<li>Please follow the installation wizard through, making sure you have the following details handy:
+					<ul>
+						<li><strong>Database Details:</strong><br />MyBB 1.8 can run on MySQL, SQLite and PostgreSQL. You will need the details of your database so MyBB can connect to it. Generally your web host should be able to supply you with these details.<ul><li><strong>MySQL:</strong> You need your MySQL username, password, database name and the hostname or ip address of your MySQL server.</li><li><strong>SQLite:</strong> You need the path to your database.</li><li><strong>PostgreSQL:</strong> You need your PostgreSQL username, password, database name and the hostname or ip address of your PostgreSQL server.</li></ul></li>
+						<li><strong>Forum Details:</strong><br />This includes the name of your forums, the URL to your forums directory, the name of your website, and the URL to your website.</li>
+						<li><strong>Administrator Information:</strong><br />During the installation process you will be required to create your initial administrator account. You will need to know which username, password, and email address you intend to use for this account</li>
+					</ul></li>
+				<li>After the installation has completed, please delete the 'install' directory from server.<br />Note: for extra security you can CHMOD config.php back to 644, or even 444, but make sure you leave settings.php writable, as well as all the other files and folders with extra permissions.</li>
+				<li>You can now login to the Administration Control Panel by appending /admin/ on to the URL of your forums</li>
+			</ol>
+			<p>Congratulations, you should now have an installed and working copy of MyBB on your web server.</p>
+	</div>
+	<div id="footer">
+		<p>
+			&copy; 2014 MyBB Group. All Rights Reserved.
+		</p>
+	</div>
+</div>
+</body>
+</html>

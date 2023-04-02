@@ -1,0 +1,349 @@
+/*
+* Global
+*/
+a:link, a:active
+{
+	text-decoration: none;
+}
+
+body
+{
+	font-family: Tahoma, Verdana, Sans-Serif;
+	font-size: 0.8em;
+	line-height: 1.6em;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+
+div#container
+{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	min-width: 56em;
+	max-width: 75em;
+	height: auto;
+}
+
+/*
+* Images
+*/
+img
+{
+	border: none;
+}
+
+/* Horizontal Rule */
+hr
+{
+	border: 0;
+    height: 0;
+    border-top: 1px solid #ddd;
+}
+
+/*
+* Links
+*/
+a:link
+{
+	color: #007fd0;
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: #007fd0;
+	text-decoration: none;
+}
+
+a:hover, a:active
+{
+	color: #ff7500;
+	text-decoration: underline;
+}
+
+/*
+* Headings
+*/
+h2, h3, h4
+{
+	font-family: Verdana;
+}
+
+h2
+{
+	color: #007fd0;
+}
+
+h3
+{
+	color: #007fd0;
+}
+
+h4
+{
+	color: #ff7500;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+/*
+* Tables
+*/
+table
+{
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	margin-top: 0.5em;
+}
+
+table thead
+{
+	background: #016AAE url('images/menu-bg.gif') repeat-x;
+	color: #fff;
+}
+
+table thead th
+{
+	font-weight: normal;
+	letter-spacing: 1px;
+	font-size: 1.1em;
+}
+
+th.row
+{
+	font-weight: bold;
+	border-bottom: 1px solid #cdcdcd;
+}
+
+table th, table td
+{
+	padding: 0.5em 0.5em 0.5em 1em;
+}
+
+table thead th
+{
+	padding-left: 0;
+}
+
+table th.row, table td
+{
+	border-bottom: 1px solid #cdcdcd;
+	text-align: left;
+}
+
+table tr.alt
+{
+	background-color: #efefef;
+}
+
+/*
+* Forms
+*/
+input
+{
+	padding: 1px;
+}
+
+/*
+* Header
+*/
+div#header
+{
+	background: url('images/logo.png') 0.5em no-repeat;
+	height: 82px;
+}
+
+div#header h1
+{
+	margin-left: -9999px;
+}
+
+div#header div#utilities
+{
+	float: right;
+	margin-top: -50px;
+}
+
+div#header div#utilities p
+{
+	font-size: 0.9em;
+	margin-top: -1em;
+}
+
+div#header div#utilities h3
+{
+	font-size: 1em;
+	color: #444;
+}
+
+/*
+* Primary Navigation
+*/
+div#primary-navigation ul
+{
+	background-color: #efefef;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 12px 24px;
+	font-size: 1.1em;
+}
+
+div#primary-navigation ul li
+{
+	display: inline;
+}
+
+div#primary-navigation ul li a
+{
+	margin-right: 20px;
+}
+
+div#primary-navigation ul li.active a
+{
+	color: #333;
+	font-weight: bold;
+}
+
+/*
+* Page content
+*/
+div#page-content
+{
+	margin: 0;
+	padding: 5px 24px;
+}
+
+div#page-content div.item
+{
+	margin: 0 0 1em 0;
+}
+
+div#page-content div.item h3
+{
+	margin-bottom: 0;
+	clear: both;
+	color: #007fd0;
+}
+
+div#page-content div.item h4
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+div#page-content div.item h5
+{
+	margin-bottom: 0;
+}
+
+div#page-content div.item p
+{
+	text-align: justify;
+}
+
+/*
+* Page content screenshots
+*/
+div#page-content div.illustration
+{
+	margin: -0.5em 0 0 1.5em;
+	float: right;
+}
+
+div#page-content div.illustration img
+{
+	border: 1px solid #39c;
+}
+
+div#page-content div.illustration p.caption
+{
+	font-size: 0.8em;
+	font-family: Verdana;
+	font-weight: bold;
+	color: #39c;
+	width: 180px;
+}
+
+div#page-content div.illustration a:hover
+{
+	border-bottom: none;
+}
+
+/*
+* Footer
+*/
+div#footer
+{
+	clear: both;
+	text-align: center;
+}
+
+div#footer p
+{
+	margin: 20px 0;
+	font-size: 0.9em;
+	color: #777;
+}
+
+/*
+* Documentation styles
+*/
+
+#install
+{
+	background: url('images/notice_install.png') top left no-repeat;
+	padding-left: 45px;
+}
+
+#upgrade
+{
+	background: url('images/notice_upgrade.png') top left no-repeat;
+	padding-left: 45px;
+}
+
+#credits
+{
+	background: url('images/notice_credits.png') top left no-repeat;
+	padding-left: 45px;
+}
+
+#license
+{
+	background: url('images/notice_license.png') top left no-repeat;
+	padding-left: 45px;
+}
+
+#install p,
+#upgrade p,
+#credits p,
+#license p {
+	margin-top: 2px;
+}
+
+.alert
+{
+	background: #FFF6BF;
+	border-top: 2px solid #FFD324;
+	border-bottom: 2px solid #FFD324;
+	text-align: center;
+	margin: 15px auto;
+	padding: 5px 20px;
+}
+
+.quote
+{
+	border: 1px solid #ccc;
+	background: #efefef;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+.quote span
+{
+	font-size: 2em;
+}
