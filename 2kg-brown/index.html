@@ -1,4 +1,4 @@
-<DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -14,7 +14,7 @@
     <script src="js/title.js"></script>
 
     <link rel="shortcut icon" type="image/png" href="css/favicon.png">
-
+   
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -56,10 +56,12 @@
         var randomsub = randomNumber()
         var soundFile = sound[randomsub]
         document.write('<EMBED src= "' + soundFile + '" hidden=true autostart=true loop=true>')
+
     </script>
 
     <script>
         var audio = document.getElementById("myaudio");
-        audio.volume = 0.2;
+        audio.volume = 0.15;
+
     </script>
 </div>

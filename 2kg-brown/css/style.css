@@ -1,19 +1,13 @@
 * {
     text-decoration: none;
     color: white;
-    cursor: url('cursor.png'), auto !important;
-    -webkit-touch-callout: none;
-    /* iOS Safari */
-    -webkit-user-select: none;
-    /* Safari */
-    -khtml-user-select: none;
-    /* Konqueror HTML */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
-    user-select: none;
-    /* Non-prefixed version, currently
+    cursor:url('cursor.png'), auto !important;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
 
@@ -47,25 +41,21 @@ body {
     color: white;
     text-decoration: none;
 }
-
 .fadeInUpBig {
     animation-duration: 1s;
     animation-delay: 1s;
 }
-
 #sub {
     font-size: 20px;
     padding-top: 8px;
     margin-top: 0px;
 }
-
 #sub:hover {
     text-shadow: 3px 3px 3px #DE3333;
     position: relative;
     top: -2px;
     left: -2px;
 }
-
 #links {
     font-size: 16px;
 }
@@ -76,28 +66,24 @@ body {
     top: -2px;
     left: -2px;
 }
-
 #group:hover {
     text-shadow: 3px 3px 3px #38A1F3;
     position: relative;
     top: -2px;
     left: -2px;
 }
-
 #instagram:hover {
     text-shadow: 3px 3px 3px #FFFC00;
     position: relative;
     top: -2px;
     left: -2px;
 }
-
 #twitter:hover {
     text-shadow: 3px 3px 3px #61CB2B;
     position: relative;
     top: -2px;
     left: -2px;
 }
-
 #discord:hover {
     text-shadow: 3px 3px 3px #7289da;
     position: relative;
@@ -117,14 +103,11 @@ body {
     background-color: #594d45;
     border: 1px solid rgb(180, 168, 168);
     opacity: 0.8;
-    filter: alpha(opacity=60);
-    /* For IE8 and earlier */
+    filter: alpha(opacity=60); /* For IE8 and earlier */
 }
-
 #sub:hover {
     color: white;
 }
-
 #tit:hover {
-    color: #dbbf94;
+    color: darkred;
 }
