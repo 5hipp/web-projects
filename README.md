@@ -1,2 +1,2 @@
 # web-projects
-a collection of web-projects from university and beyond
+this branch contains the files for my bug-hunter project
