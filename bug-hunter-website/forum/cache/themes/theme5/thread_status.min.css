@@ -1,0 +1,1 @@
+.thread_status{display:inline-block;width:13px;margin-left:2px}.thread_status:after{font-family:"FontAwesome";content:"\f005";color:#2c82c9;font-size:18px}[class*="hot"]:after{color:#fc6042;content:"\f06d";padding-left:1px}[class*="new"]:after{color:#a19c69}[class*="closefolder"]:after{color:#777;content:"\f023";padding-left:2px}

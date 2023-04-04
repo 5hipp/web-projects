@@ -1,0 +1,54 @@
+ul.thread_tools,
+ul.thread_tools li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.thread_tools li:before {
+	font-family: "FontAwesome";
+	text-rendering: auto;
+	display: inline-block;
+	padding: 0px 0px 2px 2px;
+	font-size: 14px;
+}
+
+ul.thread_tools li.printable:before {
+	content: "\f02f"; 
+	padding-right: 8px;
+}
+
+ul.thread_tools li.sendthread:before {
+	content: "\f1d9"; 
+	padding-right: 8px;
+}
+
+ul.thread_tools li.subscription_add:before {
+	content: "\f196";
+	padding-right: 8px;
+	margin-left: 1px;
+}
+
+ul.thread_tools li.subscription_remove:before {
+	content: "\f147"; 
+	padding-right: 8px;
+	margin-left: 1px;
+}
+
+.showthread_spinner {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	padding: 20px;
+}
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
