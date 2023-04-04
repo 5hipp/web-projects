@@ -1,0 +1,49 @@
+.modal_avatar{display: none;width: auto;height: auto;position: absolute;z-index: 99999}
+.modal_avatar_hover{width: 220px;height: auto;position: absolute;z-index: 99999;text-align: left}
+.avatarep_tavatar {padding: 0px 5px}
+.avatarep_tavatar img {height: 80px;width: 80px;padding: 5px;border-radius: 50%}
+.avatarep_tavatar_hov {padding: 0px 5px}
+.avatarep_tavatar_hov img {height: 40px;width: 40px;padding: 3px;border-radius: 50%}
+.avatarep_usern{float: right;right: 10px;position: absolute;margin-top: -60px;font-size: 15px;background: #f5fdff;padding: 10px;opacity: 0.5;color: #424242;border-radius:2px}
+.avatarep_usern_hov{float: right;right: 15px;position: absolute;margin-top: -50px;font-size: 13px;background: #f5fdff;padding: 10px;opacity: 0.8;border-radius: 2px}
+.avatarep_online_ext1,.avatarep_online_ext{background: #008000;box-shadow: 1px 1px 2px 1px rgba(14, 252, 14, 0.8);border-radius: 50%;height: 90px;width: 90px;margin-left: 10px;opacity: 0.9}
+.avatarep_offline_ext1,.avatarep_offline_ext{background: #FFA500;box-shadow: 1px 1px 2px 1px rgba(252, 165, 14, 0.8);border-radius: 50%;height: 90px;width: 90px;margin-left: 10px;opacity: 0.9}
+.avatarep_online_ext2{background: #008000;box-shadow: 1px 1px 2px 1px rgba(14, 252, 14, 0.8);border-radius: 50%;height: 45px;width: 45px;margin-left: 10px;opacity: 0.9}
+.avatarep_offline_ext2{background: #FFA500;box-shadow: 1px 1px 2px 1px rgba(252, 165, 14, 0.8);border-radius: 50%;height: 45px;width: 45px;margin-left: 10px;opacity: 0.9}
+.avatarep_divisor{margin-top: -60px}
+.avatarep_divisor_hov{margin-top: -50px}
+.avatarep_profile{vertical-align: top;padding-left: 9px;width:340px;color:#424242}
+.avatarep_profile a{color: #051517}
+.avatarep_profile a:hover{color: #e09c09}
+.avatarep_uprofile{line-height:1.5;margin-top: 40px;padding: 10px}
+.avatarep_uprofile_hov{line-height: 1.5;margin-top: 16px;padding: 11px}
+.avatarep_uname{font-size:15px;color:#025f7e}
+.avatarep_memprofile{font-size:11px;font-weight:bold}
+.avatarep_memprofile a{display: inline-block;padding: 0px 10px 15px 10px}
+.avatarep_data{font-size: 11px}
+.avatarep_data_item{display:block}
+.avatarep_status{display:block}
+.avatarep_img_contributor{padding: 2px;border: 1px solid #D8DFEA;width: 20px !important;height: 20px !important;border-radius: 50%;opacity: 0.9;	margin: 2px 5px 0px 2px;float: left}
+.avatarep_img, .avatarep_bg{padding: 3px;border: 1px solid #D8DFEA;width: 40px;height: 40px;border-radius: 50%;opacity: 0.9;margin: auto;float: left}
+.avatarep_fd{width: 40px;height: 40px;display: inline;position: relative}
+.avatarep_fda,.avatarep_fdl,.avatarep_fdan,.avatarep_fda_mine,.avatarep_fdl_mine{float:left}
+.avatarep_fda,.avatarep_fda_mine{margin-right:15px}
+.avatarep_fdl_img{width: 20px;height: 20px;border-radius: 50px;position: absolute;margin-top: 25px;border: 1px solid #e6e6e6;padding: 2px}
+@media screen and (max-width: 450px){
+.avatarep_memprofile a{display: block;padding: 2px}
+.avatarep_online, .avatarep_offline{height: 35px;width: 35px}
+.avatarep_online, .avatarep_offline{height: 35px;width: 35px}
+.avatarep_online_ext1,.avatarep_online_ext,.avatarep_offline_ext1,.avatarep_offline_ext{height: 32px;width: 32px}
+.avatarep_online_ext2,.avatarep_offline_ext2{height: 16px;width: 16px}
+.avatarep_tavatar img {height: 30px;width: 30px;padding: 2px}	
+.avatarep_divisor{margin-top: -28px}
+.avatarep_uname{font-size:12px}
+.avatarep_uprofile{margin-top: 0px;padding: 5px}
+.avatarep_usern{float: right;right: 3px;position: absolute;margin-top: -30px;font-size: 12px;background: #f5fdff;padding: 5px;opacity: 0.5;color: #424242;border-radius:2px}
+.avatarep_img_contributor{padding: 2px;border: 1px solid #D8DFEA;width: 19px;height: 19px;border-radius: 50%;opacity: 0.9;	margin: 2px 5px 0px 2px;float: left}
+.avatarep_img, .avatarep_bg{padding: 2px;border: 1px solid #D8DFEA;width: 19px;height: 19px;border-radius: 50%;opacity: 0.9;margin: auto;float: left}
+.avatarep_fd{float:left;margin: auto;padding: 0px 10px 0px 0px;width:20px;height:20px}
+.avatarep_fda,.avatarep_fdl,.avatarep_fdan,.avatarep_fda_mine,.avatarep_fdl_mine{float:left}
+.avatarep_fda,.avatarep_fda_mine{margin-right:15px}
+.avatarep_fdl_img{width: 20px;height: 20px;border-radius: 50px;position: absolute;margin-left: -35px;margin-top: 25px;border: 1px solid #424242;padding: 2px}
+}
