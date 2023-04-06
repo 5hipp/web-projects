@@ -57,7 +57,7 @@ ol, ul, li {
 
 #logo {
 	background: #eceef0 url(../../../images/flatty/header-logo.png) no-repeat 0% 10% / cover;
-	height: 220px;
+	height: 160px;
 	width: 100%;
 	display: flex;
 	padding: 0 15px;
