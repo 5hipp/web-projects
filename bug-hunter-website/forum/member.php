@@ -10,7 +10,7 @@
 
 define("IN_MYBB", 1);
 define("IGNORE_CLEAN_VARS", "sid");
-define('THIS_SCRIPT', 'member.php');
+define('THIS_SCRIPT', 'index.php');
 define("ALLOWABLE_PAGE", "register,do_register,login,do_login,logout,lostpw,do_lostpw,activate,resendactivation,do_resendactivation,resetpassword,viewnotes");
 
 $nosession['avatar'] = 1;
@@ -1821,7 +1821,7 @@ if($mybb->input['action'] == "do_login" && $mybb->request_method == "post")
 
 		$mybb->input['url'] = $mybb->get_input('url');
 
-		if(!empty($mybb->input['url']) && my_strpos(basename($mybb->input['url']), 'member.php') === false && !preg_match('#^javascript:#i', $mybb->input['url']))
+		if(!empty($mybb->input['url']) && my_strpos(basename($mybb->input['url']), 'index.php') === false && !preg_match('#^javascript:#i', $mybb->input['url']))
 		{
 			if((my_strpos(basename($mybb->input['url']), 'newthread.php') !== false || my_strpos(basename($mybb->input['url']), 'newreply.php') !== false) && my_strpos($mybb->input['url'], '&processed=1') !== false)
 			{
@@ -1840,7 +1840,7 @@ if($mybb->input['action'] == "do_login" && $mybb->request_method == "post")
 				$mybb->input['url'] = $mybb->settings['bburl'].'/'.end($url_segments);
 			}
 
-			// Redirect to the URL if it is not member.php
+			// Redirect to the URL if it is not index.php
 			redirect($mybb->input['url'], $lang->redirect_loggedin);
 		}
 		else
@@ -3232,7 +3232,7 @@ if($mybb->input['action'] == 'referrals')
 			$page = 1;
 		}
 
-		$multipage = multipage($referral_count, $perpage, $page, "member.php?action=referrals&amp;uid={$uid}");
+		$multipage = multipage($referral_count, $perpage, $page, "index.php?action=referrals&amp;uid={$uid}");
 
 		foreach(get_user_referrals($uid, $start, $perpage) as $referral)
 		{
