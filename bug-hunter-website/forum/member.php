@@ -667,7 +667,7 @@ if($mybb->input['action'] == "do_register" && $mybb->request_method == "post")
 
 			$plugins->run_hooks("member_do_register_end");
 
-			redirect("index.php", $lang->redirect_registered);
+			redirect("portal.php", $lang->redirect_registered);
 		}
 	}
 }
@@ -1317,13 +1317,13 @@ if($mybb->input['action'] == "activate")
 			$db->update_query("awaitingactivation", $update, "uid='".$user['uid']."' AND type='b'");
 			$plugins->run_hooks("member_activate_emailactivated");
 
-			redirect("index.php", $lang->redirect_accountactivated_admin, "", true);
+			redirect("portal.php", $lang->redirect_accountactivated_admin, "", true);
 		}
 		else
 		{
 			$plugins->run_hooks("member_activate_accountactivated");
 
-			redirect("index.php", $lang->redirect_accountactivated);
+			redirect("portal.php", $lang->redirect_accountactivated);
 		}
 	}
 	else
@@ -1846,7 +1846,7 @@ if($mybb->input['action'] == "do_login" && $mybb->request_method == "post")
 		else
 		{
 
-			redirect("index.php", $lang->redirect_loggedin);
+			redirect("portal.php", $lang->redirect_loggedin);
 		}
 	}
 
@@ -1873,11 +1873,11 @@ if($mybb->input['action'] == "login")
 	// Redirect to the page where the user came from, but not if that was the login page.
 	if(isset($_SERVER['HTTP_REFERER']) && strpos($_SERVER['HTTP_REFERER'], "action=login") === false)
 	{
-		$redirect_url = htmlentities($_SERVER['HTTP_REFERER']);
+		$redirect_url = 'portal.php';
 	}
 	else
 	{
-		$redirect_url = '';
+		$redirect_url = 'portal.php';
 	}
 
 	$captcha = '';
