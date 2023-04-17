@@ -1841,7 +1841,7 @@ if($mybb->input['action'] == "do_login" && $mybb->request_method == "post")
 			}
 
 			// Redirect to the URL if it is not index.php
-			redirect($mybb->input['url'], $lang->redirect_loggedin);
+			redirect("portal.php", $lang->redirect_loggedin);
 		}
 		else
 		{
